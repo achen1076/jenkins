@@ -32,10 +32,10 @@ pipeline{
     }
     post{
         success{
-            
+            echo 'pipeline succeeded'
         }
         failure{
-
+            echo 'pipeline failed'
         }
     }
 }
