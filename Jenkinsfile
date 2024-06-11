@@ -14,11 +14,11 @@ pipeline{
         }
 
         stage ("test"){
-            when{
-                expression{
-                    BRANCH_NAME == 'main' || BRANCH_NAME == 'master'
-                }
-            }
+            // when{
+            //     expression{
+            //         BRANCH_NAME == 'main' || BRANCH_NAME == 'master'
+            //     }
+            // }
             steps{
                echo 'testing the application...' 
             }
